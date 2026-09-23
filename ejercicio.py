@@ -8,11 +8,13 @@ def ImprimirNotas(notas):
 ImprimirNotas(notas)
 
 
-# Calcular el promedio de las notas
-cantidad_notas = len(notas)
-suma = 0
-promedio = 0
-for nota in notas:
-    suma += nota
+# Calcular el promedio de las notas usando una función
 
-promedio = suma / cantidad_notas
+def CalcularPromedio(lista_notas):
+    suma = 0
+    for nota in lista_notas:
+        suma += nota
+    promedio = suma / len(lista_notas)
+    print(f"El promedio es: {promedio}")
+
+CalcularPromedio(notas)
