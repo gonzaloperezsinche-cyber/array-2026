@@ -18,3 +18,20 @@ def CalcularPromedio(lista_notas):
     print(f"El promedio es: {promedio}")
 
 CalcularPromedio(notas)
+
+# Imprimir la nota mayor y menor
+
+minimo = notas[0]
+maximo = notas[0]
+ 
+for i in range(1, len(notas)):
+ 
+    if notas[i] < minimo:
+        minimo = notas[i]
+ 
+    if notas[i] > maximo:
+        maximo = notas[i]
+ 
+ 
+print(f"Mínimo: {minimo}")
+print(f"Máximo: {maximo}")
